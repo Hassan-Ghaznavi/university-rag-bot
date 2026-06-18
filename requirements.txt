@@ -1,5 +1,6 @@
---extra-index-url https://download.pytorch.org/whl/cpu
-torch
+--index-url https://download.pytorch.org/whl/cpu
+--extra-index-url https://pypi.org/simple
+torch==2.2.2+cpu
 streamlit
 groq
 langchain==0.1.16
