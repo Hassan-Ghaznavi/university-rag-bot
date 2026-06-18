@@ -88,7 +88,8 @@ def load_vectorstore():
 
     index = VectorstoreIndexCreator(
         embedding=HuggingFaceEmbeddings(
-            model_name="all-MiniLM-L12-v2"
+            model_name="all-MiniLM-L12-v2",
+            model_kwargs={'device': 'cpu'}  # <-- THIS IS THE FIX
         ),
         text_splitter=RecursiveCharacterTextSplitter(
             chunk_size=1000,
