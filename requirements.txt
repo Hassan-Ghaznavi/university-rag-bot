@@ -1,12 +1,15 @@
---index-url https://download.pytorch.org/whl/cpu
---extra-index-url https://pypi.org/simple
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 torch==2.3.1
-streamlit
+sentence-transformers==2.7.0
+
+streamlit==1.35.0
 groq
+
 langchain==0.1.16
 langchain-community==0.0.32
 langchain-text-splitters==0.0.1
+
 huggingface-hub
-sentence-transformers==2.7.0
 pypdf
 python-dotenv
